@@ -10,79 +10,208 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
         crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Judson:700|Roboto" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <!-- <link rel="stylesheet" href="device-mockups/device-mockups.min.css"> -->
+
+    <!-- Custom styles for this template -->
+    <!-- <link href="new-age.min.css" rel="stylesheet">
+    <link href="new-age.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="custom.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=2"/>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon/coins.png">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
-<body>
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">BETAKRONAN</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="images/menu.png" class="menu">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#bakgrund">Bakgrund</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#plattform">Plattform</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#testa-sjalv">Testa själv!</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#vart-svar">Vårt svar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="jumbotron">
         <div class="container">
             <div class="row">
-            <div class="col-md-8">
-                    <h1 class="display-3">Välkommen e-krona</h1>
-                    <p>Betakronan är en testbädd som påbörjats med anledning av Riksbankens utredning om ett offentligt digitalt betalningsmedel.
-                        Betakronans syfte är att berika samtalet och utredningen kring e-kronan med insikter som kommer av laborativ
-                        utveckling och faktiska implemenationer i kod.
-                        <a class="btn btn-primary"  href="assets/betakronan-svar-till-riksbanken.pdf" download="betakronan-svar-till-riksbanken.pdf">Ladda ner vår rapport</a>
+                <div class="col-md-8">
+                    <h1 class="display-3">Framtidens digitala kontanter</h1>
+                    <p>Betakronan är en testbädd som påbörjats med anledning av Riksbankens utredning om ett offentligt digitalt
+                        betalningsmedel. Betakronans syfte är att berika samtalet och utredningen kring e-kronan med insikter
+                        som kommer av laborativ utveckling och faktiska implemenationer i kod.
+                        <br/>
+                        <br/>
+                        <a class="btn btn-primary" href="assets/betakronan-svar-till-riksbanken.pdf" download="betakronan-svar-till-riksbanken.pdf">Ladda ner vår rapport</a>
                     </p>
-            </div>
-            <div class="col-md-4">
-                <div class="transaction-code"></div>
-            </div>
-        </div>
-        </div>
-    </div>
-
-    <div class="container main">
-        <div class="row">
-            <div class="col-md-4">
-                <img src="svg/code.svg" class="icon">
-                <h2>Plattform</h2>
-                <p>Implementationen är baserad på blockkedje-plattformen
-                    <a href="https://www.hyperledger.org/">Hyperledger Fabric</a> med verktyget Hyperledger Composer.</p>
-                <p>Källkoden finns upplagd
-                    <a href="https://github.com/Iteam1337/betakrona-hyperledger">här</a> på Github.</p>
-                <p>API finns tillgängligt
-                    <a class="btn btn-primary" href="https://api.betakronan.se">api.betakronan.se</a>
-
-                </p>
-            </div>
-            <div class="col-md-4">
-
-                <img src="svg/beaker.svg" class="icon">
-                <h2>Testa i playground</h2>
-                <p>Vill du experimentera själv med Betakronan?</p>
-                <p>För att få tillgång till vår blockkedja behövs ett id-kort. Maila <a href="mailto:einar.persson@iteam.se">einar.persson@iteam.se</a> så hör vi av oss!</p>
-                <h2>Testa i din webbläsare</h2>
-                <p>Vi har byggt en enkel simulering av en betalsida på nätet som använder sig av e-krona för betalning via QR-kod. Än så länge utan identifieringsmetod.
-                    <a class="btn btn-primary" href="https://try.snowflake.cash">try.snowflake.cash</a>
-                </p>
-            </div>
-            <div class="col-md-4">
-                <img src="svg/document.svg" class="icon">
-                <h2>Läs vårt svar</h2>
-                <p>Riksbanken bad Sveriges teknikbolag och utvecklare berätta om deras vision för e-kronan. Vi vill att Riksbanken:</p>
-                <ol>
-                    <li>Utforskar flera spår parallellt - där blockkedjeteknik utgör ett spår</li>
-                    <li>Tillåter en längre utvecklingsperiod där förståelse och arkitektur växer fram</li>
-                    <li>Lyfter in olika kompetenser (ekonomer, designers, beteendevetare, hackers, ...)</li>
-                    <li>Är radikalt öppen och transparent i processen</li>
-                    <li>Undviker “Den Stora Upphandlingen” med en enorm kravspecifikation som oundvikligen blir hopplöst inaktuell
-                        inom 3 år</li>
-                </ol>
-                <p>Läs vårt svar i sin helhet
-                    <a href="assets/betakronan-svar-till-riksbanken.pdf" download="betakronan-svar-till-riksbanken.pdf">här</a>.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/coins.svg" class="coins">
+                </div>
             </div>
         </div>
     </div>
+
+    <section class="block">
+        <div class="container">
+            <div class="row" id="bakgrund">
+                <div class="col-md-8">
+                    <h2>Bakgrund</h2>
+                    <p>Betakronan startades för att svara på Riksbankens önskan om att få in synpunkter på projektet e-krona.
+                        Ett projekt som syftar till att utreda och utvecka ett av staten garanterat digitalt komplement till
+                        kontanter. För oss är det en självklarhet att alla ska kunna delta i den digitala ekonomin. Vi ser
+                        det som en grundläggande rättighet att kunna ta del av den samhällsinfrastruktur som betalningstjänster
+                        utgör. Vi tycker inte att indivders deltagande borde villkoras en kundrelation till en privat bank.
+                        Tyvärr är utsatta grupper såsom papperslösa, nyanlända och människor utanför banksystemet ofta begränsade
+                        till fysiska kontanter. Detta skapar svårigheter för dem att delta i samhället. Även välbärgade grupper
+                        så som turister och affärsresande upplever trösklar för att delta fullt ut i ekonomin i Sverige.
+                        För oss det det en självklarthet att samtliga grupper bör inkluderas i en lösning för e-kronan.</p>
+                    <img src="images/books.png" class="illustration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="block">
+        <div class="container custom">
+            <div class="row" id="plattform">
+                <div class="col-md-8">
+                    <h2>Plattform</h2>
+                    <p>Implementationen är baserad på blockkedje-plattformen
+                        <a class="link" href="https://www.hyperledger.org/">Hyperledger Fabric</a> med verktyget Hyperledger Composer. Källkoden finns upplagd på
+                        <a class="link" href="https://github.com/Iteam1337/betakrona-hyperledger">Github</a>.</p>
+
+                    <p>Det går även att kika närmare på Betakronans API. Klicka här nedan för att se mer hur det fungerar.</p>
+
+                    <br/>
+                    <br/>
+
+                    <a class="btn btn-secondary" href="https://api.betakronan.se">api.betakronan.se</a>
+
+                    <br/>
+                    <br/>
+
+                    <img src="images/drone.png" class="illustration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="block">
+        <div class="container">
+            <div class="row" id="testa-sjalv">
+                <div class="col-md-8">
+                    <h2>Testa själv!</h2>
+                    <p>Vill du experimentera själv med Betakronan?</p>
+                    <p>För att få tillgång till vår blockkedja behövs ett id-kort. Maila
+                        <a class="link" href="mailto:einar.persson@iteam.se">einar.persson@iteam.se</a> så hör vi av oss!</p>
+                    <p>Vi har byggt en enkel simulering av en betalsida på nätet som använder sig av e-krona för betalning via
+                        QR-kod. Än så länge utan identifieringsmetod.</p>
+
+                    <br/>
+                    <br/>
+
+                    <a class="btn btn-secondary" href="https://try.snowflake.cash">try.snowflake.cash</a>
+
+                    <br/>
+                    <br/>
+
+                    <img src="images/controller.png" class="illustration">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="block">
+        <div class="container">
+            <div class="row" id="vart-svar">
+                <div class="col-md-8">
+                    <h2>Läs vårt svar</h2>
+                    <p>Riksbanken bad Sveriges teknikbolag och utvecklare berätta om deras vision för e-kronan. Vi vill att
+                        Riksbanken:</p>
+                    <ul>
+                        <li>Utforskar flera spår parallellt - där blockkedjeteknik utgör ett spår</li>
+                        <li>Tillåter en längre utvecklingsperiod där förståelse och arkitektur växer fram</li>
+                        <li>Lyfter in olika kompetenser (ekonomer, designers, beteendevetare, hackers, ...)</li>
+                        <li>Är radikalt öppen och transparent i processen</li>
+                        <li>Undviker “Den Stora Upphandlingen” med en enorm kravspecifikation som oundvikligen blir hopplöst
+                            inaktuell inom 3 år</li>
+                    </ul>
+
+                    <br/>
+                    <br/>
+
+                    <a class="btn btn-secondary" href="assets/betakronan-svar-till-riksbanken.pdf">Ladda ner vår rapport</a>
+
+                    <br/>
+                    <br/>
+
+                    <img src="images/terminal.png" class="illustration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
 
     <footer class="footer">
         <div class="container">
-            <span>Betakronan är ett öppet initiativ av utvecklare och rådgivare på Iteam. Vi digitaliserar företag och organisationer genom strategi, kod och kultur. </span>
+            <div class="row">
+                <div class="col-md-8">
+                    <a href="https://iteam.se">
+                        <img src="images/logo.png" class="logo">
+                    </a>
+                    <p>Betakronan är ett öppet initiativ av utvecklare och rådgivare på Iteam. Vi digitaliserar företag och
+                        organisationer genom strategi, kod och kultur.</p>
+                </div>
+            </div>
         </div>
     </footer>
 
     <!-- Optional JavaScript -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/new-age.js"></script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

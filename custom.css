@@ -1,38 +1,177 @@
-
-
 .icon {
     height: 50px;
     margin-bottom: 20px;
 }
 
+h2 {
+    font-size: 3rem;
+    font-family: 'Judson', serif;
+}
+
+p {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: #363C5B;
+}
+
+.link  {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: #363C5B !important;
+    font-weight: 900;
+}
+
+#mainNav {
+    border-color: rgba(34, 34, 34, 0.05);
+    background-color: #618AFF;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 400;
+    letter-spacing: 1px; 
+}
+
+#mainNav .navbar-brand {
+    color: #FFE9A4;
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 400;
+    letter-spacing: 2px; 
+}
+
+#mainNav .navbar-brand:hover, 
+#mainNav .navbar-brand:focus {
+      color: #FFE9A4; 
+}
+
+#mainNav .navbar-toggler 
+{
+    font-size: 12px;
+    padding: 8px 10px;
+    color: white; }
+#mainNav .navbar-nav > li > a {
+    font-size: 14px;
+    font-family: 'Roboto', 'sans-serif';
+    letter-spacing: 2px;
+    text-transform: uppercase; 
+}
+#mainNav .navbar-nav > li > a.active {
+    color: #fdcc52 !important;
+    background-color: transparent; 
+}
+
+#mainNav .navbar-nav > li > a.active:hover {
+    background-color: transparent; 
+}
+
+#mainNav .navbar-nav > li > a, 
+#mainNav .navbar-nav > li > a:focus {
+    color: #ffffff; 
+}
+
+#mainNav .navbar-nav > li > a:hover,
+#mainNav .navbar-nav > li > a:focus:hover {
+    color: rgba(255, 255, 255, 0.7); 
+}
+
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+}
+
+button:focus {
+    outline: none;
+}
+
 .jumbotron {    
-    background: url('images/header.jpeg');    
+    background-color: #618AFF;
     background-size: cover; 
-    /* background-position-y: 10%; */ 
-    min-height: 400px;
+    min-height: 950px;
     color: white;
+    border-radius: 0px;
+    margin-bottom: 0px;
 }
 
 .jumbotron .container {
-    text-shadow: 1px 8px 10px rgba(0, 0, 0, 0.8);
+    margin-top: 220px;
 }
 
+
 .jumbotron .container h1 {
-    font-size: 5rem;
+    font-size: 4rem;
+    font-family: 'Judson', serif;
 }
 
 .jumbotron .container p {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: white;
 }
 
-.transaction-code {
+.btn {
+    border-radius: 5px;
+    padding: 16px 120px;
+    border: 0 none;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn:focus, .btn:active:focus, 
+.btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn-primary {
+    background: #FFE9A4;
+    color: #618AFF;
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, 
+.btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #FFEDB5;
+    color: #618AFF;
+    box-shadow: none;
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: #FFE9A4;
+    box-shadow: none;
+}
+
+.btn-secondary {
+    background: #FFE9A4;
+    color: #363C5B;
+}
+
+.btn-secondary:hover, .btn-primary:focus, .btn-primary:active, 
+.btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #FFEDB5;
+    color: #363C5B;
+    box-shadow: none;
+}
+ 
+.btn-secondary:active, .btn-primary.active {
+    background: #FFE9A4;
+    box-shadow: none;
+}
+
+.coins {
     margin-top: 70px;
     display: inline-block;
-    background: url('images/transaction-code.png');
     background-size: cover;
     width: 100%;
-    height: 150px;
-    opacity: 0.9;
+    height: 250px;
+}
+
+.illustration {
+    margin-top: 70px;
+}
+
+.logo {
+    max-width: 250px; 
+    margin-bottom: 70px;
 }
 
 .main {
@@ -47,20 +186,65 @@
     margin-bottom: 40px;
 }
 
-
-h2 {
-    display: inline-block;
-    margin-left: 10px;
+.row {
+    padding-top: 70px;
 }
 
-.footer {
-    height: 50px;
-    
-    background-color:#f5f5f5;
-    font-size: 0.7rem;
-
-    padding-top: 17px;
+.block {    
+    background-color: #F6F1EC;
+    position: relative;
+    padding: 150px 0;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
 }
+section.cta .cta-content {
+    position: relative;
+    z-index: 1; 
+}
+section.cta .cta-content h2 {
+    font-size: 50px;
+    max-width: 450px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: white; 
+}
+
+
+footer {
+  padding: 100px 0;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #EBE5DF; }
+  
+footer p {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: #363C5B;
+    margin: 0 0 40px; 
+}
+
+
+footer ul {
+    margin-bottom: 0; 
+}
+footer ul li a {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.3); 
+}
+footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li a.active {
+    text-decoration: none; 
+}
+
+
+@media (min-width: 768px) {
+    section.cta .cta-content h2 {
+        font-size: 80px; 
+    } 
+}
+
+
 
 @media screen and (max-width: 600px) {
     .jumbotron .container h1 {
@@ -74,4 +258,45 @@ h2 {
     .transaction-code {
         display: none;
     }
+
+    .btn {
+        padding: 16px 16px;
+    }
+}
+
+  @media (min-width: 992px) {
+    #mainNav {
+      border-color: transparent;
+      background-color: transparent; 
+    }
+    #mainNav .navbar-brand {
+        color: fade(white, 70%); 
+    }
+    #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
+          color: white; 
+    }
+    #mainNav .navbar-nav > li > a, #mainNav .navbar-nav > li > a:focus {
+        color: rgba(255, 255, 255, 0.7); 
+    }
+    #mainNav .navbar-nav > li > a:hover, #mainNav .navbar-nav > li > a:focus:hover {
+          color: white; 
+    }
+    #mainNav.navbar-shrink {
+        border-color: rgba(34, 34, 34, 0.1);
+        background-color: #5984FF; 
+    }
+    #mainNav.navbar-shrink .navbar-brand {
+        color: #FFE9A4; 
+    }
+    #mainNav.navbar-shrink .navbar-brand:hover, 
+    #mainNav.navbar-shrink .navbar-brand:focus {
+        color: white; }
+    #mainNav.navbar-shrink .navbar-nav > li > a, 
+    #mainNav.navbar-shrink .navbar-nav > li > a:focus {
+        color: rgba(255, 255, 255, 0.7); 
+    }
+    #mainNav.navbar-shrink .navbar-nav > li > a:hover, 
+    #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
+        color: white; 
+    } 
 }
