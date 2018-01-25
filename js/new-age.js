@@ -39,7 +39,7 @@
   function pageView (page) {
     try {
       gtag('event', 'page_view', {
-        'event_label': page
+        'page_path': page.replace('#', '/')
       })
     } catch (err) {
       // whatevs
