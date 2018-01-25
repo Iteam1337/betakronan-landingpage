@@ -63,7 +63,7 @@
 
   // Init GA
   window.dataLayer = window.dataLayer || []
-  function gtag () { dataLayer.push(arguments) }
+  window.gtag = function () { dataLayer.push(arguments) }
   gtag('js', new Date())
 
   gtag('config', 'UA-2430046-8')
