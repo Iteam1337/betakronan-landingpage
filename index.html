@@ -68,7 +68,8 @@
                         som kommer av laborativ utveckling och faktiska implemenationer i kod.
                         <br/>
                         <br/>
-                        <a class="btn btn-primary" href="assets/betakronan-svar-till-riksbanken.pdf" download="betakronan-svar-till-riksbanken.pdf">Ladda ner vår rapport</a>
+                        <a class="btn btn-primary" href="assets/betakronan-svar-till-riksbanken.pdf" download="betakronan-svar-till-riksbanken.pdf"
+                            onclick="gtag('event', 'click', { 'event_category': 'download', 'event_label': this.href })">Ladda ner vår rapport</a>
                     </p>
                 </div>
                 <div class="col-md-4">
@@ -104,15 +105,18 @@
                 <div class="col-md-8">
                     <h2>Plattform</h2>
                     <p>Implementationen är baserad på blockkedje-plattformen
-                        <a class="link" href="https://www.hyperledger.org/">Hyperledger Fabric</a> med verktyget Hyperledger Composer. Källkoden finns upplagd på
-                        <a class="link" href="https://github.com/Iteam1337/betakrona-hyperledger">Github</a>.</p>
+                        <a class="link" href="https://www.hyperledger.org/" target="hyperledger"
+                            onclick="gtag('event', 'click', { 'event_category': 'outbound', 'event_label': this.href })">Hyperledger Fabric</a> med verktyget Hyperledger Composer. Källkoden finns upplagd på
+                        <a class="link" href="https://github.com/Iteam1337/betakrona-hyperledger" target="github"
+                            onclick="gtag('event', 'click', { 'event_category': 'outbound', 'event_label': this.href })">Github</a>.</p>
 
                     <p>Det går även att kika närmare på Betakronans API. Klicka här nedan för att se mer hur det fungerar.</p>
 
                     <br/>
                     <br/>
 
-                    <a class="btn btn-secondary" href="https://api.betakronan.se">api.betakronan.se</a>
+                    <a class="btn btn-secondary" href="https://api.betakronan.se" target="api"
+                        onclick="gtag('event', 'click', { 'event_category': 'outbound', 'event_label': this.href })">api.betakronan.se</a>
 
                     <br/>
                     <br/>
@@ -131,14 +135,15 @@
                     <h2>Testa själv!</h2>
                     <p>Vill du experimentera själv med Betakronan?</p>
                     <p>För att få tillgång till vår blockkedja behövs ett id-kort. Maila
-                        <a class="link" href="mailto:einar.persson@iteam.se">einar.persson@iteam.se</a> så hör vi av oss!</p>
+                        <a class="link" href="mailto:einar.persson@iteam.se" onclick="gtag('event', 'contact')">einar.persson@iteam.se</a> så hör vi av oss!</p>
                     <p>Vi har byggt en enkel simulering av en betalsida på nätet som använder sig av e-krona för betalning via
                         QR-kod. Än så länge utan identifieringsmetod.</p>
 
                     <br/>
                     <br/>
 
-                    <a class="btn btn-secondary" href="https://try.snowflake.cash">try.snowflake.cash</a>
+                    <a class="btn btn-secondary" href="https://try.snowflake.cash" target="snowflake"
+                        onclick="gtag('event', 'click', { 'event_category': 'outbound', 'event_label': this.href })">try.snowflake.cash</a>
 
                     <br/>
                     <br/>
@@ -170,7 +175,8 @@
                     <br/>
                     <br/>
 
-                    <a class="btn btn-secondary" href="assets/betakronan-svar-till-riksbanken.pdf">Ladda ner vår rapport</a>
+                    <a class="btn btn-secondary" href="assets/betakronan-svar-till-riksbanken.pdf"
+                        onclick="gtag('event', 'click', { 'event_category': 'download', 'event_label': this.href })">Ladda ner vår rapport</a>
 
                     <br/>
                     <br/>
@@ -189,7 +195,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <a href="https://iteam.se">
+                    <a href="https://iteam.se" target="iteam"
+                        onclick="gtag('event', 'click', { 'event_category': 'outbound', 'event_label': this.href })">
                         <img src="images/logo.png" class="logo">
                     </a>
                     <p>Betakronan är ett öppet initiativ av utvecklare och rådgivare på Iteam. Vi digitaliserar företag och
@@ -200,6 +207,9 @@
     </footer>
 
     <!-- Optional JavaScript -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2430046-8"></script>
+
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
