@@ -35,6 +35,23 @@
     offset: 54
   });
 
+  var navDelay
+  function pageView (page) {
+    try {
+      gtag('event', 'page_view', {
+        'event_label': page
+      })
+    } catch (err) {
+      // whatevs
+    }
+  }
+  $(window).on('activate.bs.scrollspy', function (evt, info) {
+    clearTimeout(navDelay)
+    navDelay = setTimeout(function () {
+      pageView(info.relatedTarget)
+    }, 300)
+  })
+
   // Collapse the navbar when page is scrolled
   $(window).scroll(function() {
     if ($("#mainNav").offset().top > 100) {
@@ -43,5 +60,12 @@
       $("#mainNav").removeClass("navbar-shrink");
     }
   });
+
+  // Init GA
+  window.dataLayer = window.dataLayer || []
+  function gtag () { dataLayer.push(arguments) }
+  gtag('js', new Date())
+
+  gtag('config', 'UA-2430046-8')
 
 })(jQuery); // End of use strict
