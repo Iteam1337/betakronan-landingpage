@@ -96,6 +96,41 @@
   font-size: 30px;
 }
 
+@media (max-width: 1040px) {
+  .icon {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .icon {
+    width: 45px;
+    height: 17px;
+  }
+
+  .icon .line {
+    height: 4px;
+  }
+
+  .icon .line:nth-child(2) {
+    top: 13px;
+  }
+
+  .icon.open .line:nth-child(1) {
+    top: -8px;
+    left: 8px;
+  }
+
+  .icon.open .line:nth-child(2) {
+    top: 24px;
+    left: 8px;
+  }
+
+  .close-text.show {
+    font-size: 25px;
+  }
+}
+
 /*************************/
 /****** Menu overlay *****/
 /*************************/
@@ -197,4 +232,74 @@
   height: 130px;
   margin-top: -20px;
   margin-right: 4px;
+}
+
+@media (max-width: 1000px) {
+  .links-grid {
+    height: 205px;
+    grid-template-columns: 300px 300px;
+  }
+
+  .links a,
+  .links a:active,
+  .links a:hover,
+  .links a:focus,
+  .links a:visited {
+    height: 100px;
+    font-size: 25px;
+    color: white;
+    padding-left: 40px;
+  }
+
+  .link-blue img {
+    height: 100px;
+  }
+
+  .link-grey img {
+    height: 70px;
+  }
+
+  .link-yellow img {
+    height: 80px;
+  }
+
+  .link-pink img {
+    height: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .links-grid {
+    height: 420px;
+    grid-template-columns: 100%;
+    width: 100%;
+  }
+
+  .links a,
+  .links a:active,
+  .links a:hover,
+  .links a:focus,
+  .links a:visited {
+    width: 100%;
+  }
+
+  .link-blue img {
+    margin-top: -18px;
+    margin-right: 42px;
+  }
+
+  .link-grey img {
+    margin-top: -60px;
+    margin-right: 42px;
+  }
+
+  .link-yellow img {
+    margin-top: -40px;
+    margin-right: 42px;
+  }
+
+  .link-pink img {
+    margin-top: -20px;
+    margin-right: 42px;
+  }
 }

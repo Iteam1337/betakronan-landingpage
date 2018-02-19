@@ -39,3 +39,14 @@ body {
   color: #FFD97B;
 }
 
+
+@media (max-width: 1040px) {
+  .top-section {
+    height: 70px;
+  }
+
+  .page-logo {
+    padding-left: 20px;
+    font-size: 20px;
+  }
+}
