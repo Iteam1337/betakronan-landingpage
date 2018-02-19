@@ -18,3 +18,10 @@ $('.links-grid a').on('click', function() {
   $('.links').removeClass('show')
   $('.close-text').removeClass('show')
 })
+
+// Init GA
+window.dataLayer = window.dataLayer || []
+window.gtag = function () { dataLayer.push(arguments) }
+gtag('js', new Date())
+
+gtag('config', 'UA-2430046-8')
