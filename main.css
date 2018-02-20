@@ -56,6 +56,7 @@ a.button:hover {
 }
 
 .main-column,
+.jumbotron-container,
 .footer-container {
   width: 1000px;
   padding: 0px 20px 40px 20px;
@@ -69,6 +70,30 @@ a.button:hover {
   .page-logo {
     padding-left: 20px;
     font-size: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main-column,
+  .jumbotron-container,
+  .footer-container {
+    width: 100%;
+  }
+
+  p {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  a.button {
+    width: 100%;
   }
 }
 
@@ -118,7 +143,7 @@ a.button:hover {
 }
 
 .jumbotron-grid {
-  width: 1000px;
+  width: 100%;
   display: grid;
   grid-template-columns: 700px 300px;
 }
@@ -155,6 +180,34 @@ a.button:hover {
   height: 200px;
 }
 
+@media (max-width: 1000px) {
+  .jumbotron-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .jumbotron-grid {
+    grid-template-columns: 100%;
+  }
+
+  .jumbotron-right-col {
+    justify-content: flex-start;
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .jumbotron-description {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .jumbotron-left-col {
+    padding-right: 0px;
+  }
+}
+
 /*************************/
 /******* Sections ********/
 /*************************/
@@ -177,21 +230,44 @@ section a.button {
   margin: 30px 0px 20px 0px;
 }
 
+section .image-wrapper {
+  width: 100%;
+  height: 165px;
+}
+
 section img {
-  max-height: 165px;
-  max-width: 165px;
+  width: auto;
+  height: 100%;
   margin-top: 20px;
 }
 
 .image-row {
-  width: 100%;
+  width: 800px;
+  height: 140px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .image-row img {
-  max-height: 135px;
+  width: auto;
+  height: 100%;
+}
+
+@media (max-width: 1000px) {
+  section {
+    padding: 0px 20px;
+  }
+
+  section .image-wrapper {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  section .image-wrapper {
+    width: 100%;
+  }
 }
 
 /*************************/
@@ -215,4 +291,10 @@ footer {
 
 footer .logo {
   width: 225px;
+}
+
+@media (max-width: 1000px) {
+  footer .footer-container {
+    padding: 0px 20px;
+  }
 }

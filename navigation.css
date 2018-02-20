@@ -211,7 +211,7 @@
   -ms-filter: "FlipH";
 }
 
-.link-yellow {
+.links-grid a.link-yellow {
   background-color: #FFD368;
   color: black;
 }
@@ -247,7 +247,6 @@
   .links a:visited {
     height: 100px;
     font-size: 25px;
-    color: white;
     padding-left: 40px;
   }
 
