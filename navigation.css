@@ -96,12 +96,6 @@
   font-size: 30px;
 }
 
-@media (max-width: 1040px) {
-  .icon {
-    margin-right: 20px;
-  }
-}
-
 @media (max-width: 600px) {
   .icon {
     width: 45px;
@@ -268,6 +262,10 @@
 }
 
 @media (max-width: 600px) {
+  .links {
+    padding-top: 70px;
+  }
+
   .links-grid {
     height: 420px;
     grid-template-columns: 100%;
@@ -284,21 +282,17 @@
 
   .link-blue img {
     margin-top: -18px;
-    margin-right: 42px;
   }
 
   .link-grey img {
     margin-top: -60px;
-    margin-right: 42px;
   }
 
   .link-yellow img {
     margin-top: -40px;
-    margin-right: 42px;
   }
 
   .link-pink img {
     margin-top: -20px;
-    margin-right: 42px;
   }
 }
