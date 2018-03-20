@@ -13,7 +13,7 @@
     <meta property="og:site_name" content="Betakronan"/>
     <meta property="og:description" content="Betakronan är en testbädd som påbörjats med anledning av Riksbankens utredning om ett offentligt digitalt betalningsmedel."/>
 
-    <link href="https://fonts.googleapis.com/css?family=Judson:700|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Judson:700|Roboto:300,400,700" rel="stylesheet">
 
     <!-- Custom styles -->
     <link rel="stylesheet" href="main.css">
@@ -27,8 +27,15 @@
   <!-- Navigation -->
   <div class="top-section">
     <div class="top-section-wrapper">
-      <div class="page-logo">
-        BETAKRONAN
+      <div class="top-section-left">
+        <div class="page-logo">
+          BETAKRONAN
+        </div>
+        <div class="select-language">
+          <a href="./index.html" class="swedish">SV</a>
+          <span class="separator">/</span>
+          <a href="./english.html" class="english">EN</a>
+        </div>
       </div>
       <div class="navigation">
         <div class="close-text">Stäng</div>
@@ -220,6 +227,11 @@
 
   <!-- Custom js -->
   <script src="js/main.js"></script>
+  <script>
+    // Adjust language toggle to english selected
+    $('a.english').addClass('selected-language')
+    $('a.swedish').removeClass('selected-language')
+  </script>
 
 </body>
 

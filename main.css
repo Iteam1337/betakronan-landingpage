@@ -120,10 +120,45 @@ a.button:hover {
   box-shadow: 3px 3px 5px rgba(89, 132, 255, 0.5);
 }
 
+.top-section-left {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
 .page-logo {
   position: relative;
   font-size: 25px;
   color: #FFD97B;
+}
+
+.select-language {
+  margin-left: 20px;
+}
+
+.select-language,
+.select-language a {
+  color: white;
+  font-weight: 300;
+}
+
+.separator {
+  font-weight: bold;
+}
+
+.swedish:hover,
+.english:hover {
+  cursor: pointer;
+  border-bottom: 2px solid white;
+  font-size: 17px;
+  -webkit-transition: font-size 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: font-size 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+a.selected-language {
+  font-weight: bold;
+  border-bottom: 2px solid white;
+  font-size: 17px;
 }
 
 @media (max-width: 600px) {

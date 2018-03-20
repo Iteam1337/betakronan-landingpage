@@ -6,7 +6,7 @@ $(window).scroll(function() {
   }
 });
 
-//Navigation animations
+// Navigation animations
 $('.navigation .icon').on('click', function() {
   $('.icon').toggleClass('open')
   $('.links').toggleClass('show')
