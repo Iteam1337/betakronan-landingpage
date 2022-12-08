@@ -1,7 +1,7 @@
 apiVersion: skaffold/v2alpha4
 kind: Config
 metadata:
-  name: iteam.se
+  name: betakronan.se
 build:
   artifacts:
   - image: iteam1337/betakronan-landingpage

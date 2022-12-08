@@ -1,20 +1,24 @@
-apiVersion: networking.k8s.io/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: betakronan-ingress
   namespace: betakronan
   annotations:
-    kubernetes.io/ingress.class: "public"
+    kubernetes.io/ingress.class: "nginx"
     cert-manager.io/cluster-issuer: "letsencrypt-prod"
 spec:
   tls:
-  - hosts:
-    - betakronan.se
-    secretName: betakronan-prod-tls
+    - hosts:
+        - betakronan.se
+      secretName: betakronan-prod-tls
   rules:
-  - host: betakronan.se
-    http:
-      paths:
-      - backend:
-          serviceName: betakronan-landingpage
-          servicePort: 80
+    - host: betakronan.se
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: betakronan-landingpage
+                port:
+                  number: 80
