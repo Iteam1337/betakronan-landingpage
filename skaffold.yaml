@@ -9,3 +9,6 @@ deploy:
   kubectl:
     manifests:
     - k8s/*.yaml
+    flags:
+      global:
+        - --namespace=betakronan
